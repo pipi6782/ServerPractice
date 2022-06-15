@@ -1,23 +1,23 @@
 /*
-	ÀÌº¥Æ®¸¦ ÀÌ¿ëÇÏ´Â ¹æ½ÄÀº º°µµÀÇ ÁßÀçÀÚ¸¦ ÅëÇÏ¿© ³ªÀÇ Â÷·Ê°¡ ¿Ô´ÂÁö È®ÀÎÇÏ´Â ¹æ½ÄÀÌ´Ù.
-	ÁßÀçÀÚ´Â Ä¿³ÎÀÌ°í Ä¿³ÎÀº ½º·¹µå¿¡°Ô Á¤ÇØÁø ¼ø¼­°¡ ¿À¸é ¼ø¼­¸¦ ¾Ë·ÁÁÖ´Â ¿ø¸®ÀÌ´Ù.
-	ÀÌº¥Æ®´Â booleanÃ³·³ °£´ÜÇÏ°Ô »ý°¢ÇØº¼ ¼öµµ ÀÖ´Âµ¥ "³» Â÷·Ê´Ù." or "³» Â÷·Ê°¡ ¾Æ´Ï´Ù." µÎ°¡Áö¸¸À¸·Î
-	½º·¹µåÀÇ ½ÇÇà ¿©ºÎ¸¦ °áÁ¤ÇÑ´Ù°í º¼ ¼ö ÀÖ´Ù.(¾ÆÁÖ ¾ÆÁÖ ¾ÆÁÖ °£´ÜÇÏ°Ô »ý°¢ÇØº¸¸é ÀÌ·¸´Ù)
-	ÀÌº¥Æ®´Â Auto Reset Event, Manual Reset EventÀÇ µÎ°¡Áö·Î ±¸ºÐÇÒ ¼ö ÀÖ°í C#,JAVA ¼öÁØ¿¡¼­´Â ¾Ë¾Æ¼­ ±¸ºÐµÇÁö¸¸
-	C++¼öÁØ¿¡¼­´Â ³»°¡ ÀÎÀÚ¸¦ ¾î¶»°Ô ÁÖ³Ä¿¡ µû¶ó¼­ ¹Ù²ð ¼ö ÀÖ´Ù.
-	ÀÛµ¿¿ø¸®¸¦ °£´ÜÇÏ°Ô Ç®¾îº¸¸é µÎ ½º·¹µå A,B°¡ ÀÖ°í °øÀ¯ÀÚ¿øÀ» A°¡ »ç¿ëÁßÀÏ ¶§ B¿ª½Ã °øÀ¯ÀÚ¿øÀ» »ç¿ëÇÏ°í ½Í¾îÇÑ´Ù.
-	1. ÀÌ ?? B´Â Ä¿³Î¿¡°Ô ´Þ·Á°¡¼­ "À÷ ¾²´ø°Å ´Ù ¾²¸é ³ª Á» ºÒ·¯Áà." ÇÏ´Â ºÎÅ¹À» ÇÏ°Ô µÈ´Ù.
-	2. ½Ã°£ÀÌ Áö³­ ÈÄ º¼ÀÏÀ» ´Ù º» A´Â Ä¿³Î¿¡°Ô ´Ù ½è´Ù´Â ½ÅÈ£¸¦ ÁØ´Ù.
-	3. ±× ½ÅÈ£¸¦ ¹ÞÀº Ä¿³ÎÀº B¿¡°Ô ´Þ·Á°¡ "¾Æ±î ¾²´ø ³ð ´Ù ½èÀ¸´Ï±î »¡¸® °¡¼­ ½á."ÇÏ´Â ½ÅÈ£¸¦ ÁØ´Ù.
-	Event ¹æ½ÄÀÇ ÀåÁ¡Àº ½ºÇÉ¶ôÃ³·³ ¹«½ÄÇÏ°Ô °è¼Ó ±â´Ù¸®Áöµµ ¾Ê°í SleepÃ³·³ ¿î¿¡ ¸Ã±â¸é¼­ ½¬Áöµµ ¾ÊÀ¸´Ï È¿À²ÀûÀÎ Ã³¸®°¡ °¡´ÉÇÏ´Ù´Â Á¡ÀÌ´Ù.
-	ÇÏÁö¸¸ ´ÜÁ¡ÀÌ¶ó°í ÇÑ´Ù¸é ¶Ç ´Ù¸¥ ÁßÀçÀÚ°¡ ÇÊ¿äÇÑ ¼ÀÀÌ´Ï Ãß°¡ÀûÀÎ ¸®¼Ò½º¸¦ »ç¿ëÇÏ°Ô µÈ´Ù´Â °ÍÀÌ´Ù. ±×·¸±â ¶§¹®¿¡ ¾Æ¹«¶§³ª ¾µ ¼ö ÀÖ´Â °ÍÀº ¾Æ´Ï°í ²À ÇÊ¿äÇÒ ¶§¸¸ ½á¾ß ÇÑ´Ù.
+	ì´ë²¤íŠ¸ë¥¼ ì´ìš©í•˜ëŠ” ë°©ì‹ì€ ë³„ë„ì˜ ì¤‘ìž¬ìžë¥¼ í†µí•˜ì—¬ ë‚˜ì˜ ì°¨ë¡€ê°€ ì™”ëŠ”ì§€ í™•ì¸í•˜ëŠ” ë°©ì‹ì´ë‹¤.
+	ì¤‘ìž¬ìžëŠ” ì»¤ë„ì´ê³  ì»¤ë„ì€ ìŠ¤ë ˆë“œì—ê²Œ ì •í•´ì§„ ìˆœì„œê°€ ì˜¤ë©´ ìˆœì„œë¥¼ ì•Œë ¤ì£¼ëŠ” ì›ë¦¬ì´ë‹¤.
+	ì´ë²¤íŠ¸ëŠ” booleanì²˜ëŸ¼ ê°„ë‹¨í•˜ê²Œ ìƒê°í•´ë³¼ ìˆ˜ë„ ìžˆëŠ”ë° "ë‚´ ì°¨ë¡€ë‹¤." or "ë‚´ ì°¨ë¡€ê°€ ì•„ë‹ˆë‹¤." ë‘ê°€ì§€ë§Œìœ¼ë¡œ
+	ìŠ¤ë ˆë“œì˜ ì‹¤í–‰ ì—¬ë¶€ë¥¼ ê²°ì •í•œë‹¤ê³  ë³¼ ìˆ˜ ìžˆë‹¤.(ì•„ì£¼ ì•„ì£¼ ì•„ì£¼ ê°„ë‹¨í•˜ê²Œ ìƒê°í•´ë³´ë©´ ì´ë ‡ë‹¤)
+	ì´ë²¤íŠ¸ëŠ” Auto Reset Event, Manual Reset Eventì˜ ë‘ê°€ì§€ë¡œ êµ¬ë¶„í•  ìˆ˜ ìžˆê³  C#,JAVA ìˆ˜ì¤€ì—ì„œëŠ” ì•Œì•„ì„œ êµ¬ë¶„ë˜ì§€ë§Œ
+	C++ìˆ˜ì¤€ì—ì„œëŠ” ë‚´ê°€ ì¸ìžë¥¼ ì–´ë–»ê²Œ ì£¼ëƒì— ë”°ë¼ì„œ ë°”ë€” ìˆ˜ ìžˆë‹¤.
+	ìž‘ë™ì›ë¦¬ë¥¼ ê°„ë‹¨í•˜ê²Œ í’€ì–´ë³´ë©´ ë‘ ìŠ¤ë ˆë“œ A,Bê°€ ìžˆê³  ê³µìœ ìžì›ì„ Aê°€ ì‚¬ìš©ì¤‘ì¼ ë•Œ Bì—­ì‹œ ê³µìœ ìžì›ì„ ì‚¬ìš©í•˜ê³  ì‹¶ì–´í•œë‹¤.
+	1. ì´ ?? BëŠ” ì»¤ë„ì—ê²Œ ë‹¬ë ¤ê°€ì„œ "ìŸ¤ ì“°ë˜ê±° ë‹¤ ì“°ë©´ ë‚˜ ì¢€ ë¶ˆëŸ¬ì¤˜." í•˜ëŠ” ë¶€íƒì„ í•˜ê²Œ ëœë‹¤.
+	2. ì‹œê°„ì´ ì§€ë‚œ í›„ ë³¼ì¼ì„ ë‹¤ ë³¸ AëŠ” ì»¤ë„ì—ê²Œ ë‹¤ ì¼ë‹¤ëŠ” ì‹ í˜¸ë¥¼ ì¤€ë‹¤.
+	3. ê·¸ ì‹ í˜¸ë¥¼ ë°›ì€ ì»¤ë„ì€ Bì—ê²Œ ë‹¬ë ¤ê°€ "ì•„ê¹Œ ì“°ë˜ ë†ˆ ë‹¤ ì¼ìœ¼ë‹ˆê¹Œ ë¹¨ë¦¬ ê°€ì„œ ì¨."í•˜ëŠ” ì‹ í˜¸ë¥¼ ì¤€ë‹¤.
+	Event ë°©ì‹ì˜ ìž¥ì ì€ ìŠ¤í•€ë½ì²˜ëŸ¼ ë¬´ì‹í•˜ê²Œ ê³„ì† ê¸°ë‹¤ë¦¬ì§€ë„ ì•Šê³  Sleepì²˜ëŸ¼ ìš´ì— ë§¡ê¸°ë©´ì„œ ì‰¬ì§€ë„ ì•Šìœ¼ë‹ˆ íš¨ìœ¨ì ì¸ ì²˜ë¦¬ê°€ ê°€ëŠ¥í•˜ë‹¤ëŠ” ì ì´ë‹¤.
+	í•˜ì§€ë§Œ ë‹¨ì ì´ë¼ê³  í•œë‹¤ë©´ ë˜ ë‹¤ë¥¸ ì¤‘ìž¬ìžê°€ í•„ìš”í•œ ì…ˆì´ë‹ˆ ì¶”ê°€ì ì¸ ë¦¬ì†ŒìŠ¤ë¥¼ ì‚¬ìš©í•˜ê²Œ ëœë‹¤ëŠ” ê²ƒì´ë‹¤. ê·¸ë ‡ê¸° ë•Œë¬¸ì— ì•„ë¬´ë•Œë‚˜ ì“¸ ìˆ˜ ìžˆëŠ” ê²ƒì€ ì•„ë‹ˆê³  ê¼­ í•„ìš”í•  ë•Œë§Œ ì¨ì•¼ í•œë‹¤.
 */
 
 #include <iostream>
 #include <thread>
 #include <mutex>
-#include <Windows.h> //À©µµ¿ì api¸¦ ÀÌ¿ëÇÏ¿© ÀÌº¥Æ®¸¦ ±¸ÇöÇÑ´Ù.
-#include <queue> //°ø¿ë µ¥ÀÌÅÍ¸¦ °ü¸®ÇÒ Å¥¸¦ ¸¸µç´Ù.
+#include <Windows.h> //ìœˆë„ìš° apië¥¼ ì´ìš©í•˜ì—¬ ì´ë²¤íŠ¸ë¥¼ êµ¬í˜„í•œë‹¤.
+#include <queue> //ê³µìš© ë°ì´í„°ë¥¼ ê´€ë¦¬í•  íë¥¼ ë§Œë“ ë‹¤.
 
 using namespace std;
 
@@ -25,7 +25,7 @@ mutex m;
 queue<int> q;
 HANDLE handle;
 
-void Producer() //µ¥ÀÌÅÍ¸¦ ¼ö½ÅÇÏ¿© Å¥¿¡ Áý¾î ³Ö°í
+void Producer() //ë°ì´í„°ë¥¼ ìˆ˜ì‹ í•˜ì—¬ íì— ì§‘ì–´ ë„£ê³ 
 {
 	/*while (true)
 	{
@@ -35,11 +35,11 @@ void Producer() //µ¥ÀÌÅÍ¸¦ ¼ö½ÅÇÏ¿© Å¥¿¡ Áý¾î ³Ö°í
 		}
 		this_thread::sleep_for(50ms);
 	}
-	ÀÌ ¹æ½ÄÀº 50ms ¸¶´Ù °ªÀÌ ÁÖ±âÀûÀ¸·Î µé¾î¿Â´Ù´Â °ÍÀÌ º¸ÀåµÈ »óÈ²ÀÌ´Ù.
-	ÀÌ·± »óÈ²ÀÌ¶ó¸é Consumer¿¡¼­ ¹«ÇÑ·çÇÁ¸¦ °è¼Ó µ¹¸é¼­ Ã¼Å©ÇÏ°í
-	°ªÀ» ²¨³»¿À´Â °Íµµ ±¦ÂúÀ» ¼öµµ ÀÖ´Ù.
-	ÇÏÁö¸¸ µ¥ÀÌÅÍ°¡ Á¤¸» ¾îÂ¼´Ù°¡ ÇÑ¹ø¾¿ µé¾î¿Â´Ù¸é ¾î¶³±î>
-	±×¶§µµ ¹«ÇÑ·çÇÁ¸¦ µµ´Â ÀÇ¹Ì¾ø´Â Çàµ¿À» ÇÒ °Ç°¡?
+	ì´ ë°©ì‹ì€ 50ms ë§ˆë‹¤ ê°’ì´ ì£¼ê¸°ì ìœ¼ë¡œ ë“¤ì–´ì˜¨ë‹¤ëŠ” ê²ƒì´ ë³´ìž¥ëœ ìƒí™©ì´ë‹¤.
+	ì´ëŸ° ìƒí™©ì´ë¼ë©´ Consumerì—ì„œ ë¬´í•œë£¨í”„ë¥¼ ê³„ì† ëŒë©´ì„œ ì²´í¬í•˜ê³ 
+	ê°’ì„ êº¼ë‚´ì˜¤ëŠ” ê²ƒë„ ê´œì°®ì„ ìˆ˜ë„ ìžˆë‹¤.
+	í•˜ì§€ë§Œ ë°ì´í„°ê°€ ì •ë§ ì–´ì©Œë‹¤ê°€ í•œë²ˆì”© ë“¤ì–´ì˜¨ë‹¤ë©´ ì–´ë–¨ê¹Œ>
+	ê·¸ë•Œë„ ë¬´í•œë£¨í”„ë¥¼ ë„ëŠ” ì˜ë¯¸ì—†ëŠ” í–‰ë™ì„ í•  ê±´ê°€?
 	*/
 
 	while (true)
@@ -49,7 +49,7 @@ void Producer() //µ¥ÀÌÅÍ¸¦ ¼ö½ÅÇÏ¿© Å¥¿¡ Áý¾î ³Ö°í
 			q.push(rand());
 		}
 
-		//µ¥ÀÌÅÍ¸¦ ³Ö¾î¼­ ¹º°¡¸¦ Ã³¸®ÇÒ ¼ö ÀÖ´Â »óÈ²ÀÌ µÇ¸é ÀÌº¥Æ®¸¦ ½ÇÇà½ÃÅ²´Ù(?).
+		//ë°ì´í„°ë¥¼ ë„£ì–´ì„œ ë­”ê°€ë¥¼ ì²˜ë¦¬í•  ìˆ˜ ìžˆëŠ” ìƒí™©ì´ ë˜ë©´ ì´ë²¤íŠ¸ë¥¼ ì‹¤í–‰ì‹œí‚¨ë‹¤(?).
 		if(handle != NULL)
 			SetEvent(handle);
 
@@ -59,14 +59,14 @@ void Producer() //µ¥ÀÌÅÍ¸¦ ¼ö½ÅÇÏ¿© Å¥¿¡ Áý¾î ³Ö°í
 
 }
 
-void Consumer() //µ¥ÀÌÅÍ¸¦ »ç¿ëÇÏ±â À§ÇØ Å¥¿¡¼­ ²¨³½´Ù.
+void Consumer() //ë°ì´í„°ë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•´ íì—ì„œ êº¼ë‚¸ë‹¤.
 {
 	while (true)
 	{
-		//handle¿¡ ÇØ´çÇÏ´Â ÀÌº¥Æ®°¡ ¹ß»ýÇÏ±â¸¦ ¹«ÇÑÁ¤ ±â´Ù¸°´Ù. >>¹«ÇÑ ·çÇÁ¸¦ µµ´Â°ÍÀº ¾Æ´Ï±â ¶§¹®¿¡, cpuÀÚ¿øÀ» ¼Ò¸ðÇÏ´Â »óÅÂ´Â ¾Æ´Ô
+		//handleì— í•´ë‹¹í•˜ëŠ” ì´ë²¤íŠ¸ê°€ ë°œìƒí•˜ê¸°ë¥¼ ë¬´í•œì • ê¸°ë‹¤ë¦°ë‹¤. >>ë¬´í•œ ë£¨í”„ë¥¼ ë„ëŠ”ê²ƒì€ ì•„ë‹ˆê¸° ë•Œë¬¸ì—, cpuìžì›ì„ ì†Œëª¨í•˜ëŠ” ìƒíƒœëŠ” ì•„ë‹˜
 		WaitForSingleObject(handle, INFINITE);
-		//esetEvent(handle); ÀÌº¥Æ®¸¦ »ý¼ºÇÒ ¶§ ÀÚµ¿À¸·Î ¼³Á¤Çß±â ¶§¹®¿¡ ÀÌ ÄÚµå´Â ÇÊ¿ä°¡ ¾ø´Ù. \
-		ÇÏÁö¸¸ ÀÌ ÄÚµå´Â ÀÌº¥Æ®¸¦ ¼öµ¿À¸·Î ¼³Á¤ÇßÀ» ¶§ Signal »óÅÂÀÇ ÀÌº¥Æ®¸¦ Non-Signal »óÅÂ·Î ÀüÈ¯½ÃÄÑÁÖ´Â ¿ªÇÒÀ» ÇÑ´Ù.
+		//esetEvent(handle); ì´ë²¤íŠ¸ë¥¼ ìƒì„±í•  ë•Œ ìžë™ìœ¼ë¡œ ì„¤ì •í–ˆê¸° ë•Œë¬¸ì— ì´ ì½”ë“œëŠ” í•„ìš”ê°€ ì—†ë‹¤. \
+		í•˜ì§€ë§Œ ì´ ì½”ë“œëŠ” ì´ë²¤íŠ¸ë¥¼ ìˆ˜ë™ìœ¼ë¡œ ì„¤ì •í–ˆì„ ë•Œ Signal ìƒíƒœì˜ ì´ë²¤íŠ¸ë¥¼ Non-Signal ìƒíƒœë¡œ ì „í™˜ì‹œì¼œì£¼ëŠ” ì—­í• ì„ í•œë‹¤.
 		{
 			unique_lock<mutex> lock(m);
 			if (q.empty() == false)
@@ -84,23 +84,23 @@ int main()
 	srand(time(0));
 	
 	/*
-		ÀÌº¥Æ® = Ä¿³Î¿¡¼­ »ç¿ëÇÏ´Â ¿ÀºêÁ§Æ®.
-		Ä¿³Î ¿ÀºêÁ§Æ®µéÀº °øÅëÀûÀ¸·Î
-		Usage-Count : ¿ÀºêÁ§Æ®¸¦ ¾ó¸¶³ª ¸¹ÀÌ »ç¿ëÇÏ°í ÀÖ´Â°¡(ÀÚÁÖ »ç¿ëÇÏ³Ä´Â ÀÇ¹Ì°¡ ¾Æ´Ô),
-		signal or non-signalÀ» ±¸ºÐÇÏ´Â µ¥ÀÌÅÍ,
-		Auto / Manual À» ±¸ºÐÇÏ´Â °ª ÀÌ ÀÖ´Ù.
+		ì´ë²¤íŠ¸ = ì»¤ë„ì—ì„œ ì‚¬ìš©í•˜ëŠ” ì˜¤ë¸Œì íŠ¸.
+		ì»¤ë„ ì˜¤ë¸Œì íŠ¸ë“¤ì€ ê³µí†µì ìœ¼ë¡œ
+		Usage-Count : ì˜¤ë¸Œì íŠ¸ë¥¼ ì–¼ë§ˆë‚˜ ë§Žì´ ì‚¬ìš©í•˜ê³  ìžˆëŠ”ê°€(ìžì£¼ ì‚¬ìš©í•˜ëƒëŠ” ì˜ë¯¸ê°€ ì•„ë‹˜),
+		signal or non-signalì„ êµ¬ë¶„í•˜ëŠ” ë°ì´í„°,
+		Auto / Manual ì„ êµ¬ë¶„í•˜ëŠ” ê°’ ì´ ìžˆë‹¤.
 	*/ 
 	handle = CreateEvent(
-		NULL,//Ã¹¹øÂ° ÆÄ¶ó¹ÌÅÍ´Â º¸¾È¼Ó¼º°ú °ü·ÃµÈ ÆÄ¶ó¹ÌÅÍ´Ù. Áö±ÝÀº ÇÊ¿ä¾øÀ¸´Ï null·Î ¼³Á¤ÇÑ´Ù.
-		false,//¸®¼ÂÀº ÀÚµ¿? ¼öµ¿?
-		false,//ÀÌº¥Æ®ÀÇ ÃÊ±â »óÅÂ = true¸é ¾µ ¼ö ÀÖ°í false¸é ¾µ ¼ö ¾ø´Ù.
-		NULL //ÀÌº¥Æ®ÀÇ ÀÌ¸§, Áö±ÝÀº ±×³É null
+		NULL,//ì²«ë²ˆì§¸ íŒŒë¼ë¯¸í„°ëŠ” ë³´ì•ˆì†ì„±ê³¼ ê´€ë ¨ëœ íŒŒë¼ë¯¸í„°ë‹¤. ì§€ê¸ˆì€ í•„ìš”ì—†ìœ¼ë‹ˆ nullë¡œ ì„¤ì •í•œë‹¤.
+		false,//ë¦¬ì…‹ì€ ìžë™? ìˆ˜ë™?
+		false,//ì´ë²¤íŠ¸ì˜ ì´ˆê¸° ìƒíƒœ = trueë©´ ì“¸ ìˆ˜ ìžˆê³  falseë©´ ì“¸ ìˆ˜ ì—†ë‹¤.
+		NULL //ì´ë²¤íŠ¸ì˜ ì´ë¦„, ì§€ê¸ˆì€ ê·¸ëƒ¥ null
 	);
 	/*
-		HANDLEÀº ±×³É void Æ÷ÀÎÅÍ´Ù.
-		typedef·Î ÀÌ¸§À» ºÙ¿©Áà¼­ ¾î¶² ¿ªÇÒÀ» ÇÑ´Ù´Â ´À³¦À» ÁáÀ» »ÓÀÌ¶ó°í »ý°¢ÇÏ´Âµ¥
-		±× ¿ªÇÒÀº ÀÏÁ¾ÀÇ ¹øÈ£Ç¥ °°Àº °ÍÀÌ´Ù.
-		³»°¡ ÀÚ¿øÀ» »ç¿ëÇÒ ¼ö ÀÖ´Â »óÈ²ÀÌ ¿À¸é ÀÌ ¹øÈ£Ç¥¸¦ º¸¿©ÁÖ°í ÀÚ¿øÀ» »ç¿ëÇÏ´Â °ÍÀÌ´Ù.
+		HANDLEì€ ê·¸ëƒ¥ void í¬ì¸í„°ë‹¤.
+		typedefë¡œ ì´ë¦„ì„ ë¶™ì—¬ì¤˜ì„œ ì–´ë–¤ ì—­í• ì„ í•œë‹¤ëŠ” ëŠë‚Œì„ ì¤¬ì„ ë¿ì´ë¼ê³  ìƒê°í•˜ëŠ”ë°
+		ê·¸ ì—­í• ì€ ì¼ì¢…ì˜ ë²ˆí˜¸í‘œ ê°™ì€ ê²ƒì´ë‹¤.
+		ë‚´ê°€ ìžì›ì„ ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” ìƒí™©ì´ ì˜¤ë©´ ì´ ë²ˆí˜¸í‘œë¥¼ ë³´ì—¬ì£¼ê³  ìžì›ì„ ì‚¬ìš©í•˜ëŠ” ê²ƒì´ë‹¤.
 	*/
 	thread t1(Producer);
 	thread t2(Consumer);

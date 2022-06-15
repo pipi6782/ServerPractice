@@ -1,12 +1,12 @@
 /*
-	°ø¿ëº¯¼ö¸¦ ´©±º°¡°¡ »ç¿ëÁßÀÌ¶ó¸é ³ª´Â ÀÚ¸®·Î µ¹¾Æ°¡¼­ ³»°¡ ÇÒ ¼ö ÀÖ´Â ´Ù¸¥ ÀÏÀ» ÇÏ°í ÀÖ´Ù°¡
-	ÀÏÁ¤ ½Ã°£ÀÌ Áö³­ ÈÄ ´Ù½Ã »ç¿ëÀ» ½ÃµµÇØº¸´Â ¹æ½ÄÀÌ´Ù.
-	ÀÌ ¹æ½ÄÀÇ °æ¿ì ¹«ÇÑÈ÷ ´ë±âÇÏÁö ¾Ê°í ´Ù¸¥ ÀÏÀ» ÇÏ°í ÀÖÀ» ¼ö ÀÖ´Ù´Â ÀåÁ¡ÀÌ ÀÖÁö¸¸
-	³»°¡ ´Ù½Ã ³» ÀÛ¾÷À» ÇÏ·¯ µ¹¾Æ°¬´Ù°¡ ´Ù½Ã »ç¿ëÀ» ½ÃµµÇÏ´Â »çÀÌ¿¡ ´Ù¸¥ ½º·¹µå°¡ »ç¿ëÇÏ°í ÀÖÀ» ¼öµµ ÀÖ´Ù´Â ´ÜÁ¡ÀÌ ÀÖ´Ù.
-	ÀÌ ¹æ½ÄÀº ¿î¿µÃ¼Á¦ÀÇ ½ºÄÉÁì¸µ°ú Å« °ü·ÃÀÌ ÀÖ´Ù.
-	½ºÄÉÁì¸µ : AÇÁ·Î¼¼½º(½º·¹µå)¿¡ ÀÚ¿øÀ» ÇÒ´çÇÑ ÈÄ ´ÙÀ½¿¡´Â ¾î´À ÇÁ·Î¼¼½º(½º·¹µå)¿¡ ÀÚ¿øÀ» ÇÒ´çÇØ¾ß ÇÏ´ÂÁö °áÁ¤. ½ºÄÉÁì¸µÀ» ÇÏ´Â ¹æ¹ýÀº ¿î¿µÃ¼Á¦¸¶´Ù, Á¤Ã¥¸¶´Ù ´Ù¸£´Ù.
-	Ä¿³Î¿¡¼± °¢ ÇÁ·Î¼¼½º¿¡°Ô Á¤ÇØÁø ½Ã°£¸¸Å­ ÀÚ¿øÀ» »ç¿ëÇÒ ¼ö ÀÖ´Â ±ÇÇÑÀ» ÁÖ°í ÇÁ·Î¼¼½º´Â ÁÖ¾îÁø ½Ã°£ÀÌ ³¡³ª°Å³ª ´õ ÀÌ»ó ÇÒ ÀÛ¾÷ÀÌ ¾ø´Ù¸é ±ÇÇÑÀ» Ä¿³Î¿¡ µ¹·ÁÁÖ°Ô µÈ´Ù.
-	ÀÌ ¹æ½ÄÀÌ ÀÚ°ÝÁõ °øºÎÇÒ¶§ Ç×»ó ³ª¿À´ø "½ÃºÐÇÒ ½Ã½ºÅÛ"ÀÎµí ÇÏ´Ù.
+	ê³µìš©ë³€ìˆ˜ë¥¼ ëˆ„êµ°ê°€ê°€ ì‚¬ìš©ì¤‘ì´ë¼ë©´ ë‚˜ëŠ” ìžë¦¬ë¡œ ëŒì•„ê°€ì„œ ë‚´ê°€ í•  ìˆ˜ ìžˆëŠ” ë‹¤ë¥¸ ì¼ì„ í•˜ê³  ìžˆë‹¤ê°€
+	ì¼ì • ì‹œê°„ì´ ì§€ë‚œ í›„ ë‹¤ì‹œ ì‚¬ìš©ì„ ì‹œë„í•´ë³´ëŠ” ë°©ì‹ì´ë‹¤.
+	ì´ ë°©ì‹ì˜ ê²½ìš° ë¬´í•œížˆ ëŒ€ê¸°í•˜ì§€ ì•Šê³  ë‹¤ë¥¸ ì¼ì„ í•˜ê³  ìžˆì„ ìˆ˜ ìžˆë‹¤ëŠ” ìž¥ì ì´ ìžˆì§€ë§Œ
+	ë‚´ê°€ ë‹¤ì‹œ ë‚´ ìž‘ì—…ì„ í•˜ëŸ¬ ëŒì•„ê°”ë‹¤ê°€ ë‹¤ì‹œ ì‚¬ìš©ì„ ì‹œë„í•˜ëŠ” ì‚¬ì´ì— ë‹¤ë¥¸ ìŠ¤ë ˆë“œê°€ ì‚¬ìš©í•˜ê³  ìžˆì„ ìˆ˜ë„ ìžˆë‹¤ëŠ” ë‹¨ì ì´ ìžˆë‹¤.
+	ì´ ë°©ì‹ì€ ìš´ì˜ì²´ì œì˜ ìŠ¤ì¼€ì¥´ë§ê³¼ í° ê´€ë ¨ì´ ìžˆë‹¤.
+	ìŠ¤ì¼€ì¥´ë§ : Aí”„ë¡œì„¸ìŠ¤(ìŠ¤ë ˆë“œ)ì— ìžì›ì„ í• ë‹¹í•œ í›„ ë‹¤ìŒì—ëŠ” ì–´ëŠ í”„ë¡œì„¸ìŠ¤(ìŠ¤ë ˆë“œ)ì— ìžì›ì„ í• ë‹¹í•´ì•¼ í•˜ëŠ”ì§€ ê²°ì •. ìŠ¤ì¼€ì¥´ë§ì„ í•˜ëŠ” ë°©ë²•ì€ ìš´ì˜ì²´ì œë§ˆë‹¤, ì •ì±…ë§ˆë‹¤ ë‹¤ë¥´ë‹¤.
+	ì»¤ë„ì—ì„  ê° í”„ë¡œì„¸ìŠ¤ì—ê²Œ ì •í•´ì§„ ì‹œê°„ë§Œí¼ ìžì›ì„ ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” ê¶Œí•œì„ ì£¼ê³  í”„ë¡œì„¸ìŠ¤ëŠ” ì£¼ì–´ì§„ ì‹œê°„ì´ ëë‚˜ê±°ë‚˜ ë” ì´ìƒ í•  ìž‘ì—…ì´ ì—†ë‹¤ë©´ ê¶Œí•œì„ ì»¤ë„ì— ëŒë ¤ì£¼ê²Œ ëœë‹¤.
+	ì´ ë°©ì‹ì´ ìžê²©ì¦ ê³µë¶€í• ë•Œ í•­ìƒ ë‚˜ì˜¤ë˜ "ì‹œë¶„í•  ì‹œìŠ¤í…œ"ì¸ë“¯ í•˜ë‹¤.
 */
 
 #include <iostream>
@@ -25,9 +25,9 @@ public:
 		bool expected = false;
 		while (locked.compare_exchange_strong(expected, true) == false) {
 			expected = false;
-			/*ÀÌ lockÇÔ¼ö°¡ ÀÇ¹ÌÇÏ´Â °ÍÀº ¾î¶² ½º·¹µå°¡ CASÇÔ¼ö¸¦ ½ÇÇàÇÏ´Â "¹Ù·Î ±× ¼ø°£¿¡" lockedº¯¼öÀÇ °ªÀÌ false¸é true·Î ±³Ã¼ÇÏ´Â °Í*/
-			this_thread::sleep_for(100ms); //Ä¿³Î ¸ðµå·Î µ¹¾Æ°¡¼­ 100msµ¿¾ÈÀº ´Ù½Ã ½Ã°£À» ÇÒ´ç¹ÞÁö ¾Ê´Â´Ù. >> 100ms°¡ Áö³ª±â Àü¿¡´Â ´ÙÀ½ ½ºÄÉÁì¸µ¿¡¼­µµ ÇÒ´ç¹ÞÁö ¸øÇÑ´Ù.
-			//this_thread::yield(); //Ä¿³Î ¸ðµå·Î µ¹¾Æ°¡¼­ ³»°¡ ÇÒ´ç¹ÞÀº ½Ã°£¸¸ Æ÷±âÇÑ´Ù. >> ´ÙÀ½ ½ºÄÉÁì¸µ¿¡¼­´Â ´Ù½Ã ÇÒ´ç¹ÞÀ» ¼ö ÀÖ´Ù.
+			/*ì´ lockí•¨ìˆ˜ê°€ ì˜ë¯¸í•˜ëŠ” ê²ƒì€ ì–´ë–¤ ìŠ¤ë ˆë“œê°€ CASí•¨ìˆ˜ë¥¼ ì‹¤í–‰í•˜ëŠ” "ë°”ë¡œ ê·¸ ìˆœê°„ì—" lockedë³€ìˆ˜ì˜ ê°’ì´ falseë©´ trueë¡œ êµì²´í•˜ëŠ” ê²ƒ*/
+			this_thread::sleep_for(100ms); //ì»¤ë„ ëª¨ë“œë¡œ ëŒì•„ê°€ì„œ 100msë™ì•ˆì€ ë‹¤ì‹œ ì‹œê°„ì„ í• ë‹¹ë°›ì§€ ì•ŠëŠ”ë‹¤. >> 100msê°€ ì§€ë‚˜ê¸° ì „ì—ëŠ” ë‹¤ìŒ ìŠ¤ì¼€ì¥´ë§ì—ì„œë„ í• ë‹¹ë°›ì§€ ëª»í•œë‹¤.
+			//this_thread::yield(); //ì»¤ë„ ëª¨ë“œë¡œ ëŒì•„ê°€ì„œ ë‚´ê°€ í• ë‹¹ë°›ì€ ì‹œê°„ë§Œ í¬ê¸°í•œë‹¤. >> ë‹¤ìŒ ìŠ¤ì¼€ì¥´ë§ì—ì„œëŠ” ë‹¤ì‹œ í• ë‹¹ë°›ì„ ìˆ˜ ìžˆë‹¤.
 		}
 	}
 
@@ -37,20 +37,20 @@ public:
 	}
 
 private:
-	//atomic Å¬·¡½ºÀÇ compare_exchange_strong ÇÔ¼öÀÇ ÀÇ»çÄÚµå¶ó°í º¸¸é ÆíÇÏ´Ù.
-	//ÀÌ°Å´ë·Î ±¸ÇöÇØºÃ´õ´Ï ½ÇÁ¦·Î´Â ¾ÈµÇ´õ¶ó... ¹º Áþ°Å¸®¸¦ ³»ºÎÀûÀ¸·Î ÇÏ³ªº¸´Ù
+	//atomic í´ëž˜ìŠ¤ì˜ compare_exchange_strong í•¨ìˆ˜ì˜ ì˜ì‚¬ì½”ë“œë¼ê³  ë³´ë©´ íŽ¸í•˜ë‹¤.
+	//ì´ê±°ëŒ€ë¡œ êµ¬í˜„í•´ë´¤ë”ë‹ˆ ì‹¤ì œë¡œëŠ” ì•ˆë˜ë”ë¼... ë­” ì§“ê±°ë¦¬ë¥¼ ë‚´ë¶€ì ìœ¼ë¡œ í•˜ë‚˜ë³´ë‹¤
 	bool CAS(bool* current, bool expected, bool desired)
 	{
-		//current >> ÇöÀç °ª. Á¤È®ÇÑ ÇöÀç ½ÃÁ¡ÀÇ °ªÀ» ¾Ë¾Æ¾ß ÇÏ±â ¶§¹®¿¡ Æ÷ÀÎÅÍ¸¦ ÀÌ¿ëÇÑ´Ù.(±Û ¾²°í »ý°¢ÇØº¸´Ï ·¹ÆÛ·±½º¸¦ ÀÌ¿ëÇØµµ µÉ°Å°°´Ù)
-		//expected >> Áö±ÝÂëÀÌ¸é ÀÌ·± °ªÀÌ°ÚÁö? ÇÏ´Â °ªÀÌ µé¾î°£´Ù.
-		//desired >> ³»°¡ current¿¡ µ¤¾î¾²°íÀÚ ÇÏ´Â °ªÀÌ µé¾î°£´Ù.
+		//current >> í˜„ìž¬ ê°’. ì •í™•í•œ í˜„ìž¬ ì‹œì ì˜ ê°’ì„ ì•Œì•„ì•¼ í•˜ê¸° ë•Œë¬¸ì— í¬ì¸í„°ë¥¼ ì´ìš©í•œë‹¤.(ê¸€ ì“°ê³  ìƒê°í•´ë³´ë‹ˆ ë ˆí¼ëŸ°ìŠ¤ë¥¼ ì´ìš©í•´ë„ ë ê±°ê°™ë‹¤)
+		//expected >> ì§€ê¸ˆì¯¤ì´ë©´ ì´ëŸ° ê°’ì´ê² ì§€? í•˜ëŠ” ê°’ì´ ë“¤ì–´ê°„ë‹¤.
+		//desired >> ë‚´ê°€ currentì— ë®ì–´ì“°ê³ ìž í•˜ëŠ” ê°’ì´ ë“¤ì–´ê°„ë‹¤.
 
-		if (*current == expected) //ÇöÀç °ªÀÌ ³»°¡ ¿¹»óÇÑ °ª°ú °°À¸¸é
+		if (*current == expected) //í˜„ìž¬ ê°’ì´ ë‚´ê°€ ì˜ˆìƒí•œ ê°’ê³¼ ê°™ìœ¼ë©´
 		{
-			*current = desired; //³»°¡ µ¤¾î¾²°íÀÚ ÇÏ´Â °ªÀ¸·Î ¹Ù²ãÁØ ÈÄ true¸¦ ¸®ÅÏ 
+			*current = desired; //ë‚´ê°€ ë®ì–´ì“°ê³ ìž í•˜ëŠ” ê°’ìœ¼ë¡œ ë°”ê¿”ì¤€ í›„ trueë¥¼ ë¦¬í„´ 
 			return true;
 		}
-		else return false; //±×·¸Áö ¾ÊÀ¸¸é false¸¦ ¸®ÅÏ
+		else return false; //ê·¸ë ‡ì§€ ì•Šìœ¼ë©´ falseë¥¼ ë¦¬í„´
 	}
 
 private:
