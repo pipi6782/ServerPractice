@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="01_ThreadStart.cpp" />
+    <ClCompile Include="02_Atomic.cpp" />
+    <ClCompile Include="03_Mutex.cpp" />
+    <ClCompile Include="04_SpinLock.cpp" />
+    <ClCompile Include="05_Sleep.cpp" />
+    <ClCompile Include="06_Event.cpp" />
+    <ClCompile Include="07_ConditionVariable.cpp" />
+    <ClCompile Include="08_Future.cpp" />
+    <ClCompile Include="09_Cache.cpp" />
+    <ClCompile Include="10_CPUPipeline.cpp" />
+    <ClCompile Include="11_MemoryModel.cpp" />
+    <ClCompile Include="12_TLS.cpp" />
+    <ClCompile Include="13_LockBased_Stack_Queue.cpp" />
+  </ItemGroup>
+</Project>
