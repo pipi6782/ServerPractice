@@ -14,5 +14,7 @@
     <ClCompile Include="11_MemoryModel.cpp" />
     <ClCompile Include="12_TLS.cpp" />
     <ClCompile Include="13_LockBased_Stack_Queue.cpp" />
+    <ClCompile Include="14_LockFree_Stack_1.cpp" />
+    <ClCompile Include="15_LockFree_Stack_2.cpp" />
   </ItemGroup>
 </Project>
