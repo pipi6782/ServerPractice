@@ -1,20 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="01_ThreadStart.cpp" />
-    <ClCompile Include="02_Atomic.cpp" />
-    <ClCompile Include="03_Mutex.cpp" />
-    <ClCompile Include="04_SpinLock.cpp" />
-    <ClCompile Include="05_Sleep.cpp" />
-    <ClCompile Include="06_Event.cpp" />
-    <ClCompile Include="07_ConditionVariable.cpp" />
-    <ClCompile Include="08_Future.cpp" />
-    <ClCompile Include="09_Cache.cpp" />
-    <ClCompile Include="10_CPUPipeline.cpp" />
-    <ClCompile Include="11_MemoryModel.cpp" />
-    <ClCompile Include="12_TLS.cpp" />
-    <ClCompile Include="13_LockBased_Stack_Queue.cpp" />
-    <ClCompile Include="14_LockFree_Stack_1.cpp" />
-    <ClCompile Include="15_LockFree_Stack_2.cpp" />
+    <ClCompile Include="01_ThreadStart.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="02_Atomic.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="03_Mutex.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="04_SpinLock.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="05_Sleep.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="06_Event.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="07_ConditionVariable.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="08_Future.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="09_Cache.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="10_CPUPipeline.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="11_MemoryModel.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="12_TLS.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="13_LockBased_Stack_Queue.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="14_LockFree_Stack_1.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="15_LockFree_Stack_2.cpp">
+      <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="17_RefCounting.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="18_SmartPointer.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="19_Allocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MultiThread">
+      <UniqueIdentifier>{993afb58-034c-4c7e-9882-3ed90ecb82c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{9d2e4ed6-d559-4a63-a61d-58cb1163479e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
