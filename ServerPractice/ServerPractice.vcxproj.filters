@@ -55,6 +55,18 @@
     <ClCompile Include="19_Allocator.cpp">
       <Filter>Memory</Filter>
     </ClCompile>
+    <ClCompile Include="20_StompAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="21_STLAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="22_MemoryPool1.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="23_MemoryPool2.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="MultiThread">
@@ -63,5 +75,8 @@
     <Filter Include="Memory">
       <UniqueIdentifier>{9d2e4ed6-d559-4a63-a61d-58cb1163479e}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>
